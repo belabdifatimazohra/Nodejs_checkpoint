@@ -1,5 +1,4 @@
-// Include fs module
-const fs = require("fs");
+const fs = require("fs"); // Include fs module
 
 // Callling the fs.readFile() method
 // for reading argument path file

@@ -1,8 +1,10 @@
-var fs = require('fs');
-var path = require('path');
+var fs = require('fs'); // Import fs module
+var path = require('path'); // Import path 
 
-module.exports = function (directory, extension, callback) {
-    fs.readdir(directory, function (err, list) {
+// Export function
+module.exports = (directory, extension, callback) => {
+    // Read the path directory
+    fs.readdir(directory, (err, list) => {
         if (err) return callback(err);
         else {
             list = list.filter(function (file) {
